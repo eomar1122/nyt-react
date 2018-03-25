@@ -30,5 +30,5 @@ mongoose.connect(
 // Start the API server
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, function() {
-  console.log(`Server is listening on PORT ${PORT}`);
+  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
 });

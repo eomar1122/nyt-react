@@ -1,5 +1,5 @@
 {
-  "name": "nyt-react",
+  "name": "mern",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -8,16 +8,12 @@
     "client": "node scripts/start-client.js",
     "start": "concurrently \"nodemon server.js\" \"npm run client\"",
     "build": "node scripts/build.js",
+    "seed": "node scripts/seedDB.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "installDeps": "yarn && cd client && yarn",
-    "heroku-prebuild": "cd client && yarn install",
-    "heroku-postbuild": "node scripts/build.js"
+    "heroku-postbuild": "node script/build.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/eomar1122/nyt-react.git"
-  },
-  "author": "Elshibani Omar",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^3.5.0",
