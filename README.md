@@ -1,4 +1,4 @@
-# nyt-react
+# New York Times-React
 
 ## Overview
 
