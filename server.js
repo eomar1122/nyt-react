@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 const logger = require('morgan');
 const path = require('path');
 const routes = require('./routes');
+const MONGODB_URI = require("./config/keys");
+
 
 const app = express();
 
@@ -21,7 +23,7 @@ app.use(routes);
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/nyt-react",
+  MONGODB_URI || "mongodb://localhost/nyt-react",
   {
     useMongoClient: true
   }

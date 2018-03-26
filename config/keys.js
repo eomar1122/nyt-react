@@ -1,0 +1,1 @@
+module.exports = "mongodb://<eomar>:<password>@ds249398.mlab.com:49398/nyt-reactdb"
