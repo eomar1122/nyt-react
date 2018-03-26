@@ -23,7 +23,7 @@ app.use(routes);
 mongoose.Promise = global.Promise;
 // Connect to the Mongo DB
 mongoose.connect(
-  MONGODB_URI || "mongodb://localhost/nyt-react",
+  process.env.MONGODB_URI || "mongodb://localhost/nyt-react",
   {
     useMongoClient: true
   }
