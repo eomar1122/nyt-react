@@ -189,7 +189,7 @@ export default class Articles extends Component {
                         )
                       )
                     }
-                      <FormBtn type='warning' additional='btn-block' onClick={this.getMoreResults}>Get more results</FormBtn>
+                      <FormBtn type='info' additional='btn-block' onClick={this.getMoreResults}>Get more results</FormBtn>
                   </PanelBody>
                 </Panel>
               ) : ''
